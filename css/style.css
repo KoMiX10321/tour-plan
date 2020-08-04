@@ -2002,6 +2002,9 @@ template {
   .footer-list {
     min-width: 100%;
   }
+  .navbar__search {
+    min-width: 85%;
+  }
   .navbar__search_mobile_visible {
     width: 245px;
   }
