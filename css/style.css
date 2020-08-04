@@ -2002,5 +2002,8 @@ template {
   .footer-list {
     min-width: 100%;
   }
+  .navbar__search_mobile_visible {
+    width: 245px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
