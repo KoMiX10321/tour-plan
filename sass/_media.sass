@@ -339,14 +339,17 @@
                 min-height: 67px
                 flex-direction: column
                 justify-content: space-between
-                align-items: start
+                align-items: start               
+@media (max-width: 375px)
+    .navbar
+        &__search
+            max-width: 92%
 @media (max-width: 325px)
     .footer
         &-list
             min-width: 100%
     .navbar
         &__search
-            max-width: 85%
             &_mobile
                 &_visible
                     width: 245px                                     

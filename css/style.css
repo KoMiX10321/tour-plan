@@ -1998,12 +1998,15 @@ template {
   }
 }
 
+@media (max-width: 375px) {
+  .navbar__search {
+    max-width: 92%;
+  }
+}
+
 @media (max-width: 325px) {
   .footer-list {
     min-width: 100%;
-  }
-  .navbar__search {
-    min-width: 85%;
   }
   .navbar__search_mobile_visible {
     width: 245px;
