@@ -10,8 +10,8 @@
                 height: 100%
                 object-fit: cover
     .card
-        width: 230px
-        height: 230px
+       width: 230px
+       height: 230px 
     .footer
         &-wrapper
             grid-template-columns: minmax(min-content, 190px) repeat(2, 1.5fr) minmax(min-content, 190px)
@@ -72,8 +72,8 @@
         &__card
             margin-bottom: 20px    
     .card
-        width: 340px
-        height: 250px
+       width: 340px
+       height: 250px
     .footer
         &-wrapper
             grid-template-columns: minmax(min-content, 2fr) repeat(2, 1.5fr) minmax(min-content, 2fr)
@@ -86,7 +86,8 @@
             grid-column: 1 / 4
             justify-self: start
         &__input
-            flex-basis: 49%
+            &-group
+                flex-basis: 49%
         &__logo
             grid-row: 1 / 2 
             grid-column: 1 / 2
@@ -226,7 +227,18 @@
             flex-direction: column
             min-height: 450px
         &-slider
-            height: 350px    
+            height: 350px
+    .modal
+        &__dialog
+            &--visible
+                width: 85%
+                padding: 33px 30px
+        &__info
+            flex-basis: 100%;
+            margin-bottom: 15px
+        &__button
+            order: 2    
+
     .booking
         width: 100%
     .map
@@ -244,25 +256,26 @@
                 &:after, &:before
                     display: none
             &__button
-                top: 45px
-                &--prev
-                    left: 50%
-                    margin-left: -30%
-                &--next
-                    right: 50%
-                    margin-right: -30%
+                 top: 45px    
+                 &--prev
+                     left: 50%
+                     margin-left: -30%
+                 &--next
+                     right: 50%
+                     margin-right: -30% 
     .activities
         padding-top: 40px
         padding-bottom: 60px                 
     .card
-        width: 49%
-        height: 255px
+       width: 49%
+       height: 255px
     .footer
         padding: 69px 0 21px
         &-list
             grid-column: 1 / 5 
         &__input
-            flex-basis: 49% 
+            &-group
+                flex-basis: 49% 
         &-wrapper
             grid-template-columns: repeat(4, 1fr)
             grid-template-rows: repeat(9, minmax(30px, max-content)) repeat(2, minmax(40px, max-content)) repeat(2, minmax(60px, max-content))
@@ -322,14 +335,14 @@
         width: 100%
     .reviews
         &__title
-            font-style: normal
-            font-weight: bold
-            font-size: 18px
-            line-height: 23px
-            text-align: center
-            text-transform: uppercase
+                font-style: normal
+                font-weight: bold
+                font-size: 18px
+                line-height: 23px
+                text-align: center
+                text-transform: uppercase     
     .card
-        width: 100%
+       width: 100%
     .footer
         &__input
             flex-basis: 100%
@@ -340,10 +353,6 @@
                 flex-direction: column
                 justify-content: space-between
                 align-items: start
-@media (max-width: 375px)
-    .navbar
-        &__search
-            max-width: 92%
 @media (max-width: 325px)
     .footer
         &-list
